@@ -3,9 +3,10 @@ This is a third party implementation of RA-CNN in pytorch. I am still working on
 
 ## Requirements
 - python3
-- [Pytorch 0.4 > ](https://github.com/pytorch/pytorch#from-source)
+- [Pytorch >= 0.4.1 ](https://github.com/pytorch/pytorch#from-source)
 - torchvision
 - numpy
+- scipy, optional
 - [tensorflow](https://www.tensorflow.org/install/), optional
 
 ## TODO
@@ -38,7 +39,7 @@ Currently only cuda available device support.
 If you want to see training process,
 
 ```bash
-$ Tensorboard --log='visual/' --port=6666
+$ tensorboard --logdir='visual' --port=6666
 ```
 
 and go to 'localhost:6666' on webbrowser. You can see the Loss, Acc and so on.
